@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="every-thing">
+        <!--button to switch mode-->
+        <button class="mode">switch to </button>
+        <div class="todoform">
+            <h1>Todo List</h1>
+            <form id="todo-form">
+                <div class="inputs">
+                    <input type="text" id="todo-input" placeholder="Add a new todo" required>
+                    <input class="time" type="time" id="todo-input" placeholder="choose a scheduled time" required>
+                    <textarea name="decription" id="description" placeholder="add a short description"></textarea>
+                    <button type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+    <div class="itemtodo">
+        <ul id="todo-list">
+
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const todoForm = document.getElementById('todo-form');
+            const todoInput = document.getElementById('todo-input');
+            const descriptionInput = document.getElementById('description');
+            const todoList = document.getElementById('todo-list');
+
+            todoForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const todoText = todoInput.value.trim();
+                const descriptionText = descriptionInput.value.trim();
+
+                if (todoText) {
+                    const li = document.createElement('li');
+                    li.textContent = `${todoText} - ${descriptionText}`;
+                    todoList.appendChild(li);
+                    todoInput.value = '';
+                    descriptionInput.value = '';
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
