@@ -113,3 +113,17 @@ body{
         color:rgba(0, 0, 0, 0.829);
         padding-left: 6px;
     }
+    .itemtodo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+        min-height: 50vh;
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        background-color: rgba(99, 87, 87, 0.8);
+        color: rgb(237, 233, 233);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.46);
+        border-radius: 18px;}
