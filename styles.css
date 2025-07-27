@@ -33,7 +33,7 @@ body{
         border: none;
         border-radius: 5px;
         margin-bottom: 10px;
-        background-color: rgba(99, 87, 87, 0.8);
+        background-color: rgba(99, 87, 87, 0.6);
         color: rgb(237, 233, 233);
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.46);
         border-radius: 18px;
@@ -46,7 +46,7 @@ body{
         border: none;
         border-radius: 5px;
         margin-bottom: 10px;
-        background-color: rgba(99, 87, 87, 0.8);
+        background-color: rgba(99, 87, 87, 0.6);
         color: rgb(237, 233, 233);
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.46);
         border-radius: 18px;
@@ -104,7 +104,7 @@ body{
         border: none;
         border-radius: 5px;
         margin-bottom: 10px;
-        background-color: rgba(99, 87, 87, 0.8);
+        background-color: rgba(99, 87, 87, 0.6);
         color: rgb(237, 233, 233);
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.46);
         border-radius: 18px;
@@ -117,13 +117,31 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 300px;
+        width: 50%;
         min-height: 50vh;
         padding: 10px;
         border: 1px solid grey;
         border-radius: 5px;
         margin-bottom: 10px;
-        background-color: rgba(99, 87, 87, 0.8);
+        background-color: rgba(99, 87, 87, 0.6);
         color: rgb(237, 233, 233);
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.46);
+        padding: 10px;
         border-radius: 18px;}
+        li{
+            list-style: none;
+            margin-bottom: 10px;
+            margin-left: 2px;
+            display : flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;       
+            padding: 10px;
+            border: 1px solid grey;
+        }
+        .todo-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }

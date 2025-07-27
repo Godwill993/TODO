@@ -53,7 +53,11 @@
 
                 if (todoText) {
                     const li = document.createElement('li');
-                    li.textContent = `${todoText} - ${descriptionText}`;
+                    li.innerHTML = `
+                     <input type = "checkbox" class = "checkbox">
+                     <span class="todo-text">${todoText}</span>
+                     <button class="delete-btn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                    `;
                     todoList.appendChild(li);
                     todoInput.value = '';
                     descriptionInput.value = '';
