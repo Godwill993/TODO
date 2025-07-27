@@ -11,8 +11,8 @@
 
 <body>
     <div class="every-thing">
-        <!--button to switch mode-->
-        <button class="mode">switch to </button>
+     
+        <div id="icretodo" class="mode"><span></span> </div>
         <div class="todoform">
             <h1>Todo List</h1>
             <form id="todo-form">
@@ -45,6 +45,7 @@
             const todoInput = document.getElementById('todo-input');
             const descriptionInput = document.getElementById('description');
             const todoList = document.getElementById('todo-list');
+            const incritodo = document.getElementById('incretodo')
 
             todoForm.addEventListener('submit', (e) => {
                 e.preventDefault();
@@ -65,6 +66,23 @@
                 }
 
             });
+            todoList.addEventListener('click', (e) => {
+                if (e.target.classList.contains('delete-btn')) {
+                    e.target.parentElement.remove();
+                } else if (e.target.classList.contains('edit-btn')) {
+                    const todoText = e.target.parentElement.querySelector('.todo-text');
+                    const newText = prompt('Edit your todo:', todoText.textContent);
+                    if (newText !== null) {
+                        todoText.textContent = newText;
+                    }
+                } else if (e.target.classList.contains('checkbox')) {
+                    li.style.backgroundColor = 'lightgreen';
+                    const todoText = e.target.nextElementSibling;
+                    todoText.classList.toggle('completed');
+                    
+                }
+            });
+
             
         });
     </script>
