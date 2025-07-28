@@ -9,35 +9,38 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* background-image: url(thereal.jpg); */
+    background-image: url(thereal.jpg);
     background-size: cover;
     background-position: center;
 }
 #update-icon{
    
     position: absolute;
-    top: 6px;
-    right: 6px;
+    top: 20px;
+    right: 16px;
    
 }
 #counter{
-    width:20px;
-    height: 20px;
+    width:18px;
+    height: 18px;
     background-color: red;
     color: white;
-    border-radius: 10px;
+    border-radius: 9px;
     display: flex;
     align-items: center;
     justify-content:center;
-    font-size: x-small;
+    font-size: small;
     position: absolute;
-     top: 2px;
-    right: 2px;
+     top: -1px;
+    right: 1px;
+    border: 1px solid white;
 
 }
- i.fa.fa-suitcase::before{
-    width: 150px;
-    height: 150px;
+ .fa-suitcase{
+     transform: scale(1.7);
+     color: white;
+     /* width: 40px;
+     height: 40px;  */
 }
 .every-thing{
     display: flex;
@@ -48,6 +51,10 @@ body{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;}
+    .butte{
+        background-color: transparent;
+        border: none;
+    }
 
     .every-thing h1{
         font-size: 2rem;
@@ -140,7 +147,7 @@ body{
         padding-left: 6px;
     }
     .itemtodo{
-        display: flex;
+        display: hidden;
         align-items: center;
         justify-content: space-between;
         width: 50%;
@@ -201,4 +208,18 @@ body{
         appearance: none;
         border: 2px solid rgb(56, 55, 55);
         border-radius: 5px;
+      }
+      .headmod{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+        border-bottom: 1px solid grey;
+      }
+      .xbut{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: larger;
       }
