@@ -9,9 +9,35 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url(thereal.jpg);
+    /* background-image: url(thereal.jpg); */
     background-size: cover;
     background-position: center;
+}
+#update-icon{
+   
+    position: absolute;
+    top: 6px;
+    right: 6px;
+   
+}
+#counter{
+    width:20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: x-small;
+    position: absolute;
+     top: 2px;
+    right: 2px;
+
+}
+ i.fa.fa-suitcase::before{
+    width: 150px;
+    height: 150px;
 }
 .every-thing{
     display: flex;
