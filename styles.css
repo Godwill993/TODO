@@ -97,6 +97,7 @@ body{
         cursor: pointer;
     }
     .todoform{
+        position: fixed;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -106,6 +107,8 @@ body{
         background-color: rgba(160, 152, 152, 0.08);
         backdrop-filter: blur(10px);
         box-shadow:  4px 4px 9px rgba(206, 202, 202, 0.6);
+        z-index: 10;
+        max-height: 85vh;
     ;
     }
     button{
@@ -223,3 +226,12 @@ body{
         color: white;
         font-size: larger;
       }
+      .overlay{
+        display: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+      
+    }
