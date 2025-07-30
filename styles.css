@@ -150,7 +150,7 @@ body{
         padding-left: 6px;
     }
     .itemtodo{
-        display: hidden;
+        display:none;
         align-items: center;
         justify-content: space-between;
         width: 50%;
@@ -226,12 +226,5 @@ body{
         color: white;
         font-size: larger;
       }
-      .overlay{
-        display: fixed;
-        top: 0px;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        background-color: rgba(0, 0, 0, 0.8);
-      
-    }
+  
+   

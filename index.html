@@ -12,7 +12,7 @@
 <body>
     <div class="every-thing">
 
-        
+
         <div class="todoform">
             <h1>Todo List</h1>
             <form id="todo-form">
@@ -28,10 +28,12 @@
         </div>
 
     </div>
-    <div class="itemtodo">
+    <div class="itemtodo" id="todoo">
         <div class="headmod">
-           <div> <h2>my todos</h2></div>
-           <button class="xbut">x</button>
+            <div>
+                <h2>my todos</h2>
+            </div>
+            <button id="closeButton" class="xbut">x</button>
 
         </div>
         <ul id="todo-list">
@@ -40,70 +42,11 @@
 
     </div>
     <div id="update-icon">
-      <button class="butte"><span><i  class="fa fa-suitcase" aria-hidden="true"></i></span></button>  
-        <div id="counter" >0</div>
+        <button id="button"><span><i class="fa fa-suitcase" aria-hidden="true"></i></span></button>
+        <div id="counter">0</div>
     </div>
-    <div class="overlay"></div>
-
-
-
-
-
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const todoForm = document.getElementById('todo-form');
-            const todoInput = document.getElementById('todo-input');
-            const descriptionInput = document.getElementById('description');
-            const todoList = document.getElementById('todo-list');
-            const countDisplay = document.getElementById('count');
-            const counter = document.getElementById('counter');
-            let cont = 0;
-
-            todoForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const todoText = todoInput.value.trim();
-                const descriptionText = descriptionInput.value.trim();
-                const span = document.createElement('span');
-                if (todoText) {
-                    const li = document.createElement('li');
-                    li.innerHTML = `
-                     <input type = "checkbox" class = "checkbox">
-                     <span class="todo-text">${todoText}</span>
-                     <button class="edit-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
-                     <button class="delete-btn id="decrement"><i class="fa fa-trash" aria-hidden="true"></i></button>
-                    `
-                    cont++;
-                    counter.textContent = cont;
-                    ;
-                    todoList.appendChild(li);
-                    todoInput.value = '';
-                }
-            });
-
-
-            todoList.addEventListener('click', (e) => {
-                if (e.target.classList.contains('delete-btn')) {
-                    e.target.parentElement.remove();
-                    cont--;
-                    counter.textContent = cont;
-                } else if (e.target.classList.contains('edit-btn')) {
-                    const todoText = e.target.parentElement.querySelector('.todo-text');
-                    const newText = prompt('Edit your todo:', todoText.textContent);
-                    if (newText !== null) {
-                        todoText.textContent = newText;
-                    }
-                } else if (e.target.classList.contains('checkbox')) {
-                    li.style.backgroundColor = 'lightgreen';
-                    const todoText = e.target.nextElementSibling;
-                    todoText.classList.toggle('completed');
-
-                }
-            });
-        });
-    </script>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
