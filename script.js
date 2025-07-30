@@ -51,13 +51,26 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    
+    let overLay = document.createElement('div');
     show.addEventListener('click', () => {
         block.style.display = 'block'
+     
+     document.body.append(overLay);
+     overLay.style.display = 'flex'
+     overLay.style.position ='fixed'
+     overLay.style.top ='0'
+     overLay.style.bottom ='0'
+     overLay.style.left = '0'
+     overLay.style.right ='0'
+     overLay.style.backgroundColor = 'rgba(255, 255, 255, 0.342)'
+     overLay.style.backdropFilter = 'blur(10px)'
+     overLay.style.zIndex ='12'
 
     });
     close.addEventListener('click', ()=>{
-      block.style.display = 'none'   
+      block.style.display = 'none' 
+     overLay.style.display = 'none'
+
     })
     console.log(show)
 });
