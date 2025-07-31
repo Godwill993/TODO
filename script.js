@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 todoText.textContent = newText;
             }
         } else if (e.target.classList.contains('checkbox')) {
-            li.style.backgroundColor = 'lightgreen';
+            
             const todoText = e.target.nextElementSibling;
-            todoText.classList.toggle('completed');
+            li.style.backgroundColor = 'rgba(144, 238, 144, 0.68)';
 
         }
     });
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
      overLay.style.bottom ='0'
      overLay.style.left = '0'
      overLay.style.right ='0'
-     overLay.style.backgroundColor = 'rgba(255, 255, 255, 0.342)'
+     overLay.style.backgroundColor = 'rgba(45, 44, 44, 0.63)'
      overLay.style.backdropFilter = 'blur(10px)'
      overLay.style.zIndex ='12'
 
