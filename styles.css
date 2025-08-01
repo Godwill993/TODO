@@ -235,13 +235,13 @@ h2{
         color: white;
         font-size: larger;
       }
-      /* .overlay{
-        display: ;
-      }
-   */
+      
    @media (max-width:414px ) {
     .itemtodo{
         width: 90%;
+    }
+    .todoform{
+        width: 94%;
     }
     
    }
