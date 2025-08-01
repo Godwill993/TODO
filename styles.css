@@ -108,11 +108,13 @@ h2{
         border-radius: 10px;
         padding: 40px;
         background-color: rgba(160, 152, 152, 0.08);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(8px);
         box-shadow:  4px 4px 9px rgba(206, 202, 202, 0.6);
         z-index: 6;
         max-height: 85vh;
+        max-width: fit-content;
         color: rgba(255, 255, 255, 0.342)
+        
     ;
     }
     button{
@@ -159,7 +161,7 @@ h2{
         z-index: 15;
         align-items: center;
         justify-content: space-between;
-        width: 50%;
+        width: 70%;
         min-height: 50vh;
         padding: 10px;
         border: 1px solid grey;
@@ -179,7 +181,7 @@ h2{
             justify-content: space-between;
             width: 100%;       
             padding: 10px;
-            
+            border-radius: 2px;
             border: 1px solid grey;
         }
         ul{
@@ -203,7 +205,8 @@ h2{
         min-width: 20px;
         width: 20px;
         appearance: none;
-        border: 2px solid grey;
+        border: 2px solid rgb(48, 96, 79);
+        background-color: rgba(65, 152, 123, 0.308);
         border-radius: 5px;
       }
       input:checked::before{
@@ -236,4 +239,9 @@ h2{
         display: ;
       }
    */
-   
+   @media (max-width:414px ) {
+    .itemtodo{
+        width: 90%;
+    }
+    
+   }

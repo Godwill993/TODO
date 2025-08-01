@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             counter.textContent = cont;
         } else if (e.target.classList.contains('edit-btn')) {
             const todoText = e.target.parentElement.querySelector('.todo-text');
-            const newText = prompt('Edit your todo:', todoText.textContent);
+            const newText = prompt('edit your todo', todoText.textContent);
             if (newText !== null) {
                 todoText.textContent = newText;
             }
